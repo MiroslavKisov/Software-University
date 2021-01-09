@@ -1,0 +1,23 @@
+﻿<form method="post" action="/Tracks/Create?albumId={0}" style="text-align:center">
+    <h1>Create Track</h1>
+    <hr />
+    <div class="form-group col-md-12" style="padding: 0px 400px 0px 400px">
+        <label style="padding-right:540px">Name</label>
+        <input type="text" name="trackName" placeholder="Name..." class="form-control" />
+    </div>
+    <div class="form-group col-md-12" style="padding: 0px 400px 0px 400px">
+        <label style="padding-right:540px">Link</label>
+        <input type="text" name="trackLink" placeholder="Link..." class="form-control" />
+    </div>
+    <div class="form-group col-md-12" style="padding: 0px 400px 0px 400px">
+        <label style="padding-right:540px">Price</label>
+        <input type="text" name="price" placeholder="Price..." class="form-control"/>
+    </div>
+    <div class="form-group col-md-12" style="padding: 0px 400px 0px 400px">
+        <input class="btn btn-success" type="submit" value="Create" />
+    </div>
+</form>
+<hr />
+<div style="padding-left:20px">
+    <a class="btn btn-success" href="/Album/Details?id={0}">Back To Album</a>
+</div>

@@ -1,0 +1,14 @@
+{
+  "name": "list-towns",
+  "version": "1.0.0",
+  "description": "list towns task",
+  "main": "towns.js",
+  "scripts": {
+    "test": "towns"
+  },
+  "author": "MKisov",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.1.1"
+  }
+}

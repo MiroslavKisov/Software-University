@@ -1,0 +1,14 @@
+{
+  "name": "http-status-cats",
+  "version": "1.0.0",
+  "description": "Status Cats Homework",
+  "main": "catSeeder.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MKisov",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.1.1"
+  }
+}

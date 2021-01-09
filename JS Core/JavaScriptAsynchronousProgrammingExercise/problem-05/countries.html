@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./countries.js"></script>
+    <title>Countries And Towns</title>
+    <style>
+        .successMessage {
+            background-color: lightgreen;
+            height: 50px;
+            font-size:  25px;
+        }
+
+        .errorMessage {
+            background-color: red;
+            height: 50px;
+            font-size:  25px;
+        }
+
+        fieldset {
+            margin-bottom: 50px;
+        }
+
+        #showTowns {
+            margin-bottom: 50px;
+        }
+
+        #showCountries {
+            margin-bottom: 50px;
+        }
+
+        #hideCountries {
+            visibility: hidden;
+        }
+
+        #hideTowns {
+            visibility: hidden;
+        }            
+
+    </style>
+</head>
+<body>
+    <div id="message"></div>
+    <fieldset>
+        <legend>Create Country</legend>
+        Country Name: <input id="countryName" type="text">
+        <button id="createCountry">Create</button>
+    </fieldset>
+    <fieldset>
+        <legend>Create Town</legend>
+        Town Name: <input id="townName" type="text">
+        Country: <select id="townCountry"></select>
+        <button id="createTown">Create</button>
+    </fieldset>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody id="countries">
+
+        </tbody>    
+    </table>
+    <button id="hideCountries">Hide</button></br>
+    <button id="showCountries">Show Countries</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Town</th>
+            </tr>
+        </thead>
+        <tbody id="towns">
+
+        </tbody>   
+    </table>
+    Town Country: <input id="searchedCountry" type="text"></br>
+    <button id="hideTowns">Hide</button></br>
+    <button id="showTowns">Show Towns</button>
+
+    <script>
+        attachEvents()
+    </script>
+</body>
+</html>

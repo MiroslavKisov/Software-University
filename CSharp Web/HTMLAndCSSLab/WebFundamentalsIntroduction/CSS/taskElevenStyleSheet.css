@@ -1,0 +1,20 @@
+﻿.outer{
+    border: dotted;
+    border-color: blue;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.middle {
+    border: dashed;
+    border-color: red;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.inner{
+    border: 2px solid green;
+    border-radius : 10px;
+    text-align: center;
+    padding : 30px;
+}

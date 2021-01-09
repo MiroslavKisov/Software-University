@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20180723091657_AddingManager.cs" />
+    <Compile Remove="Migrations\20180723092033_AddingManager2.cs" />
+    <Compile Remove="Migrations\20180723092302_AddingManager.cs" />
+    <Compile Remove="Migrations\20180723092415_AddingManager.cs" />
+    <Compile Remove="Migrations\20180723092539_AddingManager.cs" />
+    <Compile Remove="Migrations\20180723092846_AddingManager.cs" />
+    <Compile Remove="Migrations\20180723180656_EmployeeList.cs" />
+    <Compile Remove="Migrations\20180723181023_EmployeeList.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Employees.Models\Employees.Models.csproj" />
+  </ItemGroup>
+
+</Project>
